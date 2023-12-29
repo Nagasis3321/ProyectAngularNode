@@ -1,0 +1,33 @@
+    <!-- mi-componente.component.html -->
+    <h2>ORDEN DE SERVICIO TÉCNICO</h2>
+    <div>
+        <div>
+            <label for="fechaIngreso">Fecha de ingreso:</label>
+            <input type="date" id="fechaIngreso" [(ngModel)]="fechaIngreso" required/>
+            <label for="fechaEgreso">Fecha de egreso:</label>
+            <input type="date" id="fechaEgreso" [(ngModel)]="fechaEgreso" required/>          
+        </div>
+        <div>    
+            <label for="solicitante">Solicitante:</label>
+            <input type="text" id="solicitante" [(ngModel)]="solicitante" required/>
+            <label for="gerencia">Gerencia:</label>
+            <input type="text" id="gerencia" [(ngModel)]="gerencia" required/>
+            <label for="sector">Sector/Distrito:</label>
+            <input type="text" id="sector" [(ngModel)]="sector" required/>
+            <label for="telefono">Telefono:</label>
+            <input type="text" id="telefono" [(ngModel)]="telefono" required/>
+        </div>
+        <div>
+            <label for="nombreEquipo">Nombre del equipo:</label>
+            <input type="text" id="nombreEquipo" [(ngModel)]="this.equipo.nombreEquipo" required/>
+            <label for="teamViewers">TeamViewers:</label>
+            <input type="text" id="teamViewers" [(ngModel)]="this.equipo.teamViewer" required/>
+            <br>
+            <label for="numeroOrdenReclamo">Número de Orden de Reclamo:</label>
+            <input type="text" id="numeroOrdenReclamo" [(ngModel)]="numeroOrdenReclamo" required/>
+        </div>
+        <label for="detalleDelIngreso">Detalle del ingreso:</label>
+        <input type="textarea" id="detalleDelIngreso" [(ngModel)]="detalleDelngreso" required/>
+        <button type="submit">Enviar</button>
+    </div>
+    
